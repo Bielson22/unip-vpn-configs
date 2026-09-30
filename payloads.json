@@ -1,0 +1,22 @@
+{
+  "version": "3.8.8",
+  "last_update": "2026-09-30",
+  "payloads": [
+    {
+      "name": "📶 Vivo Direct / WebSocket TLS (Porta 443)",
+      "inject": "GET / HTTP/1.1[crlf]Host: unipvpn.khkcah.com[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]"
+    },
+    {
+      "name": "📶 Claro Fronting SSL / Stunnel5 (Porta 445)",
+      "inject": "CONNECT [host_port] HTTP/1.1[crlf]Host: cl.khkcah.com[crlf][crlf]"
+    },
+    {
+      "name": "📶 TIM Fast UDP / BadVPN (Porta 7300)",
+      "inject": "UDP_CUSTOM_FAST_BYPASS"
+    },
+    {
+      "name": "🌐 SlowDNS / SSH Over DNS",
+      "inject": "SLOWDNS_NAMESERVER_ACTIVE"
+    }
+  ]
+}
